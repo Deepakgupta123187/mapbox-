@@ -1,0 +1,44 @@
+{
+   
+    "members": [
+      {
+        "name": "Molecule Man",
+        "age": 29,
+        "secretIdentity": "Dan Jukes",
+    
+        "latitude":"26.7606",
+        "longitude":"83.3732"
+       
+      },
+      {
+        "name": "Madame Uppercut",
+        "age": 39,
+        "secretIdentity": "Jane Wilson",
+        "latitude":"25.5941",
+        "longitude":"85.1376"
+      
+      },
+      {
+        "name": "Eternal Flame",
+        "age": 1000000,
+        "secretIdentity": "Unknown",
+        "latitude":"23.3441",
+        "longitude":"85.3096" 
+      },
+
+      {
+        "name": "Deepak ",
+        "age": 22,
+        "secretIdentity": "1241",
+        "latitude":"21.1458",
+        "longitude":"79.0882" 
+      },
+      {
+        "name": "Deep ",
+        "age": 18,
+        "secretIdentity": "1240",
+        "latitude":"25.2138",
+        "longitude":"78.6654" 
+      }
+    ]
+  }

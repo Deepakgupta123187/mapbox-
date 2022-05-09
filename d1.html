@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>A simple map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%;}
+</style>
+</head>
+<body>
+<div id='map' ></div>
+</body>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZGVlcGFrMjAwMCIsImEiOiJjbDJzdGp4b2kwMDFvM2ludDBiOGl0MGx4In0.gCYuOcvllcee391GJVsUHQ';
+    var map = document.getElementById('map');
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [78.9629, 20.5937],
+        zoom: 4
+    });
+    
+
+    map.on('load', function () {
+
+map.addLayer({
+    "id": "route",
+    "type": "line",
+    // "type": "line",
+
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    // long    lat  
+                    [83.3732, 26.7606],
+                    [85.1376, 25.5941],
+                    [85.3096, 23.3441],
+                    [79.0882, 21.1458],
+                    [78.6654, 25.2138],
+                    [83.3732, 26.7606]
+                ]
+            }
+            
+        }
+        
+    }
+    
+});
+
+});
+ </script>
+<script src="d1.js"></script> 
+</html>
+
+
